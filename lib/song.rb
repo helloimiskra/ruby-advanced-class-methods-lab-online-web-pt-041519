@@ -33,8 +33,8 @@ class Song
     @@all.map do |song|
       if song.name == name
         song
-      end.compact
-    end
+      end
+    end.compact
   end
 
 
