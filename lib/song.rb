@@ -62,6 +62,7 @@ class Song
     song_name = file[1].sub(/(.mp3)/, '')
     song = self.create
     song.name = song_name
+    song.artist_name = artist_name
     song.save
     song.name
   end
