@@ -46,13 +46,13 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    song = self.new
-    file = filename.sub(/(.mp3)/)
-    file.split(' - ')
+    file = filename.split(' - ')
+    artist_name = file(0)
+    song_name = file(1)[/(.mp3)/] = ''
     #file = filename.split(' - ')
     #file.map {|item| item }
     #chomp(/(.mp3)/)
-    file
+    
 
 
     #/(.mp3)/
