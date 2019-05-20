@@ -20,6 +20,8 @@ class Song
     song = self.new
     song.name = name
     @@all << name
+    @@all.each do |song| song.name
+    end
   end
 
 
