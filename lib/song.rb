@@ -60,8 +60,7 @@ class Song
     file = filename.split(' - ')
     artist_name = file[0]
     song_name = file[1].sub(/(.mp3)/, '')
-
-    song = self.new
+    song = self.create
     song.name = song_name
     song.save
     song
