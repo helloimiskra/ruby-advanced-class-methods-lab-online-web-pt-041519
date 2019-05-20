@@ -63,7 +63,7 @@ class Song
     song = self.create
     song.name = song_name
     song.save
-    song
+    song.name
   end
 
 
