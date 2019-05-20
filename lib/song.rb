@@ -54,19 +54,17 @@ class Song
     song.name = song_name
     song.artist_name = artist_name
     song
-
-    #file = filename.split(' - ')
-    #file.map {|item| item }
-    #chomp(/(.mp3)/)
-
-
-
-    #/(.mp3)/
-    #/\A\w+ \w+/
-
   end
 
   def self.create_from_filename(filename)
+    file = filename.split(' - ')
+    artist_name = file[0]
+    song_name = file[1].sub(/(.mp3)/, '')
+
+    song = self.new
+    song.name = song_name
+    song.save
+    song
   end
 
 
