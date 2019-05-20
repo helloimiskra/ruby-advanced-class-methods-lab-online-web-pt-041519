@@ -34,7 +34,7 @@ class Song
       if song.name == name
         song
       end
-    end.compact
+    end.compact.to_s
   end
 
 
