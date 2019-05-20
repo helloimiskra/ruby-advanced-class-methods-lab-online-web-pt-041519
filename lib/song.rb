@@ -18,8 +18,8 @@ class Song
 
   def self.new_by_name(name)
     name = self.new
-    name.name = name
-    name
+    @@all << name
+    @@all.each {|song| puts song.name}
   end
 
 
