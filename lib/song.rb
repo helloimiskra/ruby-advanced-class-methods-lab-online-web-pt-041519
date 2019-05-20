@@ -52,7 +52,7 @@ class Song
     #file = filename.split(' - ')
     #file.map {|item| item }
     #chomp(/(.mp3)/)
-    
+
 
 
     #/(.mp3)/
