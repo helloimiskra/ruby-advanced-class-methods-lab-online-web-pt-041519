@@ -20,8 +20,7 @@ class Song
     song = self.new
     song.name = name
     @@all << name
-    @@all.each {|song| puts "#{song.name}"}
-
+    puts "#{song.name}"
   end
 
 
