@@ -47,8 +47,12 @@ class Song
 
   def self.new_from_filename(filename)
     song = self.new
-    file = filename.delete(/(.mp3)/)
+    file = filename.chomp(/(.mp3)/)
     puts file
+
+
+    #/(.mp3)/
+    #/\A\w+ \w+/
 
   end
 
