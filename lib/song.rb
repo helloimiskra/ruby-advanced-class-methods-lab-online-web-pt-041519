@@ -49,7 +49,7 @@ class Song
     song = self.new
     file = filename.split('-')
     #chomp(/(.mp3)/)
-    puts file
+    file
 
 
     #/(.mp3)/
